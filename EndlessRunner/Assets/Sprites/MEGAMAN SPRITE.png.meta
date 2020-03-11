@@ -1,8 +1,12 @@
 fileFormatVersion: 2
-guid: 09ac7d82ad546b141af1ffe01c748f00
+guid: d3000c04facfc944fbe651651733622c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: spritesheet_ground_0
+    21300000: MEGAMAN SPRITE_0
+    21300002: MEGAMAN SPRITE_1
+    21300004: MEGAMAN SPRITE_2
+    21300006: MEGAMAN SPRITE_3
+    21300008: MEGAMAN SPRITE_4
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -32,7 +36,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -85,21 +89,101 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_ground_0
+      name: MEGAMAN SPRITE_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1920
-        width: 133
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 45
+        y: 270
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4032486108943054db58d4555f337d74
+      spriteID: 92e83938d90a3d44db390e3c41731531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEGAMAN SPRITE_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 270
+        width: 24
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb819384e519c146990a9b6edd36e69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEGAMAN SPRITE_2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 270
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6018f187c074c4447b0256caf9f74360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEGAMAN SPRITE_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 270
+        width: 21
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2baa81b6a8e44c42ba5cf9c0755b843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEGAMAN SPRITE_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 264
+        width: 26
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eccdcfbc321cb146981274ea26777df
       vertices: []
       indices: 
       edges: []
@@ -107,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 63612eaf960b5cc489ed00d5ff7b3770
+    spriteID: 62b02f85ddaee074dbe8fb1d627845bb
     vertices: []
     indices: 
     edges: []
