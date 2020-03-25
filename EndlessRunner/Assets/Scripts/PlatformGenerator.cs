@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class PlatformGenerator : MonoBehaviour
 {
-    public GameObject ground;
     public Transform generationPoint;
     public float distanceBetween;
-    private float groundWidth;
     public float distanceBetweenMin;
     public float distanceBetweenMax;
-    public ObjectPooler objectPool;
-    
+    public ObjectPooler[] objectPools;    
+    private int groundSelector;
+    private float[] groundsWidth;
     void Start()
     {
-        groundWidth = ground.GetComponent<BoxCollider2D>().size.x;
+        groundsWidth = new float[objectPools.Length];
+
+        for (int i = 0; i < objectPools.Length; i++)
+        {
+            groundsWidth[i] = objectPools[i].pooledObject.GetComponent<BoxCollider2D>().size.x;
+        }
         
     }
 
@@ -24,12 +28,14 @@ public class PlatformGenerator : MonoBehaviour
         if(transform.position.x < generationPoint.position.x)
         {
             distanceBetween = Random.Range(distanceBetweenMin, distanceBetweenMax);
-            transform.position = new Vector3(transform.position.x + groundWidth + distanceBetween, transform.position.y, transform.position.z);
-            //Instantiate(ground, transform.position, transform.rotation);
-            GameObject newObject = objectPool.GetPooledObject();
+            groundSelector = Random.Range(0, objectPools.Length);
+            transform.position = new Vector3(transform.position.x + (groundsWidth[groundSelector]/2) + distanceBetween, transform.position.y, transform.position.z);
+            GameObject newObject = objectPools[groundSelector].GetPooledObject();
             newObject.transform.position = transform.position;
             newObject.transform.rotation = transform.rotation;
             newObject.SetActive(true);
+            transform.position = new Vector3(transform.position.x + (groundsWidth[groundSelector] / 2), transform.position.y, transform.position.z);
+
         } 
         
     }
